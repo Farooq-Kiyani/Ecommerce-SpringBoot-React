@@ -1,78 +1,70 @@
-# Ecommerce
+# Getting Started with Create React App
 
-This is an ecommerce REST API built using Java and Spring Boot. The API provides functionality for managing products, orders, and customers. The API uses JSON Web Tokens (JWT) for authentication and authorization.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Table of Contents
+## Available Scripts
 
-- [Microservices](#microservices)
-  - [config-service](#config-service)
-  - [api-gateway](#api-gateway)
-  - [catalog-service](#catalog-service)
-  - [order-service](#order-service)
-  - [auth-service](#auth-service)
-  - [image-service](#image-service)
-  - [customer-service](#customer-service)
-  - [cart-service](#cart-service)
-- [Technologies Used](#technologies-used)
-- [Setup](#setup)
-- [Authentication and Authorization](#authentication-and-authorization)
-- [Future Development](#future-development)
+In the project directory, you can run:
 
-## Microservices
+### `npm start`
 
-The API is built using a microservice architecture, with the following services:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### api-gateway
-The `api-gateway` service provides a single entry point for clients to access the various services in the system.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### catalog-service
-The `catalog-service` service manages the catalog of products available for sale.
+### `npm test`
 
-### config-service
-The `config-service` service stores configuration data for the various services in the system.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### order-service
-The `order-service` service manages orders placed by customers.
+### `npm run build`
 
-### auth-service
-The `auth-service` service provides authentication and authorization for the system.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### image-service
-The `image-service` service manages the images associated with products.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### customer-service
-The `customer-service` service manages information about customers who have registered with the system.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### cart-service
-The `cart-service` service manages customer cart
+### `npm run eject`
 
-## Technologies Used
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-The following technologies were used to build this API:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- Spring Cloud (Config, OpenFeign, Eureka)
-- JPA / Hibernate
-- Springdocv2
-- Java version 19
-- Spring Boot version 3.0.2
-- PostgreSQL database
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Setup
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-1. Clone this repository to your local machine.
-2. Install PostgreSQL database and create a database for the application.
-3. Update the `application-{service}.yml` file in the `config-server` module with the database details for each service.
-4. Start the Eureka server by running the `DiscoveryServerApplication.java` file in the `discovery-server` module.
-5. Start the Config Server by running the `ConfigServerApplication.java` file in the `config-server` module.
-6. Start the Api Gateway by running the `ApiGatewayApplication.java` file in the `api-gateway` module.
-7. Start the remaining modules (catalog-service, order-service, auth-service, image-service, customer-service and cart-serivce) by running their respective `Application.java` files.
+## Learn More
 
-## Authentication and Authorization
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-The API uses JSON Web Tokens (JWT) for authentication and authorization. When a user logs in, they receive a JWT that must be included in the header of all subsequent requests. The JWT is verified on the server side to ensure that the user is authenticated and authorized to perform the requested action.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Future Development
+### Code Splitting
 
-In the future, a React-based frontend will be added to the application to provide a user interface for managing products, orders, and customers.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Additionally, the API could be expanded to include features such as payment processing, order tracking, and inventory management. The API could also be optimized for performance by implementing caching, load balancing, and other techniques. Finally, the API could be secured further by adding additional security measures such as rate limiting, input validation, and intrusion detection.
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
